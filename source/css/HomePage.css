@@ -1,0 +1,48 @@
+/*--- Formatting Page --- */
+#main{
+    display:flex;
+}
+#itemBoxes{
+    display:flex;
+}
+#newBoxes{
+    display:flex;
+}
+
+
+/* --- All Home Page Boxes*/
+.homeDiv{
+    background-color: rgb(53, 51, 67);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+/*--- Welcome Box ---*/
+#welcomeBox{
+    height: 80vh;
+    width: 33vw;
+    margin: 10px;
+    border-radius:25px;
+}
+
+/*--- New Boxes --- */ 
+#newClothes{
+    border-radius: 25px;
+    height: 36vh;
+    width: 30vw;
+    margin: 10px;
+} 
+
+#newOutfit{
+    border-radius: 25px;
+    height: 36vh;
+    width: 30vw;
+    margin: 10px;
+
+}
+
+/*--- Popular Box ---*/
+#popular{
+    border-radius: 25px;
+    height: 37vh;
+}
