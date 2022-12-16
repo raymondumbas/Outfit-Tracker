@@ -1,6 +1,7 @@
 ## Code Style
 - Variables/Functions: camelCase
 - File names: CapitalFirstLetter
+- Folder names: lower-case-dashes
 
 ## References
 - From https://www.w3schools.com/howto/howto_css_topnav_right.asp
