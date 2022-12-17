@@ -1,4 +1,4 @@
-# Outfit-Tracker
+# FitCheck
 An app used to keep track of clothes with the primary purpose of creating outfits out of those pieces.
 
 ### Current Functionality
