@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "source/css/global.css">
+    <link rel = "stylesheet" href = "source/css/ClothesPage.css">
+    <script type = "text/javascript" src="source/js/ClothesPage.js"></script>
     <title>Clothes</title>
 </head>
 
 <header>
     <div class="topnav">
-        <a href="HomePage.html">Logo</a>
+        <a href="HomePage.html">FitCheck</a>
         <div class="navRight">
             <a href ="ClothesPage.html">Clothes</a>
             <a href ="OutfitsPage.html">Outfits</a>
@@ -19,6 +21,31 @@
 </header>
 
 <body>
+    <div class = "topBar">
+    <span class = "title"><b>Clothes</b></span>
+        <div class = "resultsView">
+            <span>Sort by:</span>
+            <select name ="sort" id="sort">
+                <option value="date" selected>Date</option>
+                <option value="shirts">Shirts</option>
+                <option value="outerwear">Outerwear</option>
+                <option value="pants">Pants</option>
+                <option value="shoes">Shoes</option>
+                <option value="accessories">Accessories</option>
+            </select>
+            <span>Filter by:</span>
+            <select name ="filter" id="filter">
+                <option value="none" selected>None</option>
+                <option value="shirts">Shirts</option>
+                <option value="outerwear">Outerwear</option>
+                <option value="pants">Pants</option>
+                <option value="shoes">Shoes</option>
+                <option value="accessories">Accessories</option>
+            </select>
+        </div>
+        <hr class = "solidDivider">
+    </div>
+
     
 </body>
 </html>
