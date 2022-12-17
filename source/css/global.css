@@ -1,5 +1,18 @@
+*{
+    font-family: "Trebuchet MS", sans-serif;
+}
+
 body{
     background-color: rgb(222, 235, 248);
+}
+
+
+.solidDivider{
+    border-top: 3px solid rgb(53, 51, 67);
+}
+
+.title{
+    font-size: 25px;
 }
 
 /* Navigation Bar*/
@@ -14,7 +27,7 @@ body{
     float: left;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
     font-size: 20px;
 }
@@ -28,3 +41,12 @@ body{
     float:right;
 }
 
+
+/* Top Part of Clothes and Outifts Pages*/
+.resultsView{
+    float: right;
+}
+
+.topBar{
+    margin: 30px 10vw 5px;
+}
