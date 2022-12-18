@@ -34,7 +34,22 @@ small decisions, but any decisions that has a lot of factors will have it's own 
   - Increments everytime an item is added
   - Used to give each item a unique number
 
+- allItems
+  - array of all of the currently used keys
+  - used to populate gallery
+
 # Style
 - I really like a minimalist, modern look and since this is an app I actually want to use for myself
 I based the style off of my own interests
 - The colors lean more towards neutral choices so that they don't conflict with the colors of any of the clothing
+
+# Program Flow
+
+### Clothing Gallery View
+- Each item is a button, when created set:
+  - id = itemNumber
+  - img = clothing picture
+
+- When item is pressed:
+  - use id value as key to look up clothing information
+  - use that info to populate the pop up menu

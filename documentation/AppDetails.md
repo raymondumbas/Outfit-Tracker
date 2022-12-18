@@ -8,6 +8,7 @@ A web-based application with locally stored data that keeps tracks of the user's
 - Create outfits by grouping different clothes
 - Keep track of how often each piece of clothes/outfit is worn
 - Filter through clothing/outfits based on type, frequency, color, style, occasion
+- Edit and delete items
 
 ## Backlog:
 - Suggest outfits based on temperature 
