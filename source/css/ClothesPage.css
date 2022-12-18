@@ -1,3 +1,9 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+}
+
 .clothing{
     width: 13vw;
     height: 13vw;
@@ -9,6 +15,8 @@
     text-decoration: none;
     font-size: 1vw;
     color: rgb(53, 51, 67);
+    padding: 0;
+    border: none;
 }
 
 .clothingPic{
@@ -16,8 +24,52 @@
     width: 10vw;
     height: 12vw;
 }
-body{
+
+/*----- PopUp Menu -----*/
+/* Div w/ Name and Exit*/
+.nameX{
+    padding: 10px 15px 0px;
+}
+
+/* Div w/ Pics, Tags, and Notes*/
+.picTagsNotes{
     display: flex;
-    flex-direction: column;
-    justify-content: center;;
+    padding: 25px;
+    gap: 15px;
+}
+
+/*Div w/ Tags and Notes*/
+.tagsNotes{
+    position: relative;
+}
+/* Exit Button*/
+.xButton{
+    float: right;
+    border: none;
+    border-radius:25px;
+    background:none;
+    font-size: 3vw;
+}
+
+.xButton:hover {
+    color: white;
+  }
+
+.xButton:active {
+    background-color: lightgray;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Picture */
+.clothesPopPic{
+    width: 30vw;
+   
+    
+}
+
+/* Notes */
+.notes{
+    position:absolute;
+    bottom: 0;
 }

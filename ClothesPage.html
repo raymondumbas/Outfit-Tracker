@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "source/css/global.css">
     <link rel = "stylesheet" href = "source/css/ClothesPage.css">
-    <script type = "text/javascript" src="source/js/ClothesPage.js"></script>
     <title>Clothes</title>
 </head>
 
@@ -21,8 +20,10 @@
 </header>
 
 <body>
+
+    <!-- Title, Sort, and Filter-->
     <div class = "topBar">
-    <span class = "title"><b>Clothes</b></span>
+        <span class = "title"><b>Clothes</b></span>
         <div class = "resultsView">
             <span>Sort by:</span>
             <select name ="sort" id="sort">
@@ -42,24 +43,47 @@
             </select>
         </div>
         <hr class = "solidDivider">
-        <div class = "gallery">
-            <button href = "HomePage.html" class = "clothing" >
-                <img src = "tshirt.jpg" alt = "gray tshirt" class = "clothingPic">
-                <span>CLOTHING NAME</span>
-            </button >
-            <button  class = "clothing">
-                CLOTHING NAME
-            </button >
-            <button  class = "clothing">
-                CLOTHING NAME
-            </button >
-            <button  class = "clothing">
-                CLOTHING NAME
-            </button >
-            <button  class = "clothing">
-                CLOTHING NAME
-            </button >
-        </div>
     </div> 
+
+    <!-- View of all the Clothes items-->
+    <div class = "gallery">
+        <button class = "clothing" onclick = "openPopUp(this);">
+            <img src = "tshirt.jpg" alt = "gray tshirt" class = "clothingPic">
+            <span>CLOTHING NAME</span>
+        </button >
+        <button  class = "clothing">
+            CLOTHING NAME
+        </button >
+        <button  class = "clothing">
+            CLOTHING NAME
+        </button >
+        <button  class = "clothing">
+            CLOTHING NAME
+        </button >
+        <button  class = "clothing">
+            CLOTHING NAME
+        </button >
+    </div>
+
+    <!-- Pop Up Menu for Clothes Info -->
+    <div class = "popup">
+        <div class = "popupData">
+            <div class = "nameX">
+                <span class = "title">Name</span>
+                <button type = "button" class = "xButton">X</button>
+            </div>
+            <div class = "picTagsNotes">
+                <img src = "tshirt.jpg" alt = "gray tshirt" class = "clothesPopPic">
+                <div class = "tagsNotes">
+                    <div class ="tags">
+                        Tags
+                    </div>
+                    <span class = "notes"> Notes</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script type = "text/javascript" src="source/js/ClothesPage.js"></script>
 </html>
