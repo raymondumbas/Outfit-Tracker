@@ -4,6 +4,7 @@
 - Folder names: lower-case-dashes
 
 ## References
+Navigation Bar
 - From https://www.w3schools.com/howto/howto_css_topnav_right.asp
 ```
 <div class="topnav">
@@ -16,3 +17,8 @@
   </div>
 </div>
 ```
+Pop-Up Menu
+- From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+
+
+
