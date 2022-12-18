@@ -15,6 +15,7 @@ Pull Requests
 Issues
 - Labels for type and page
 - Used for everything
+- If I push without a PR, commit hash will be commented on issue
 
 Documentation
 - Small and medium sized decisions are in main ADR.md
