@@ -7,8 +7,6 @@ body{
 }
 
 
-
-
 /* Navigation Bar*/
 .topnav{
     background-color: rgb(53, 51, 67);
@@ -55,10 +53,10 @@ body{
 
 /* "Clothes" and "Fits" */
 .title{
-    font-size: 25px;
+    font-size: 3vw;
 }
 
-/* Gallery Part of Clothes and Outfits Pages*/
+/* Gallery Part of Clothes and Fits Pages*/
 .gallery{
     height: 80vh; /*Remove once gallery is populated, should adjust according to content*/
     width: 75vw;
@@ -67,4 +65,26 @@ body{
     gap: 2vw;
     padding: 2vw;
     justify-content: center;
+    margin: auto;
+}
+
+/* ---------- POP UP MENU FOR CLOTHING AND FITS ITEMS ----------*/
+.popup{
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: none;
+}
+
+.popupData{
+    height: 40vw;
+    width: 60vw;
+    background-color: gray;
+    margin: 10vh auto;
+    border-radius: 25px;
 }
