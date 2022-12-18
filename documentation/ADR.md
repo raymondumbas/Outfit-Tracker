@@ -1,0 +1,40 @@
+# List of ADR's
+This document contains the reasoning for decisions I made about implementing and developing this app. I didn't want too many ADR's for
+small decisions, but any decisions that has a lot of factors will have it's own separate ADR.
+
+# Storage
+### All user storage will be kept in localStorage
+- It is easy to use and is already implemented
+
+### Clothing
+- Each piece of clothing will be it's own item containing a JSON type structure containing:
+  - Name
+  - Tags
+  - Date
+  - Number of Fits
+  - Frequency Worn
+- Each item will be accessed with a key: NameNumber
+  - Name = lowercase, no spaces
+  - Number = based on the current itemNumber value
+
+### Fits
+- Each fit will be it's own item containing a JSON type structure containing:
+  - Name
+  - Tags
+  - Date
+  - Frequency Worn
+  - List of item keys that are in the fit
+- Each fit will be accessed with a key: "fit"NameNumber
+  - "fit" = string literal
+  - Name = lowercase, no spaces
+  - Number = based on the current itemNumber value 
+
+### Variables
+- itemNumber
+  - Increments everytime an item is added
+  - Used to give each item a unique number
+
+# Style
+- I really like a minimalist, modern look and since this is an app I actually want to use for myself
+I based the style off of my own interests
+- The colors lean more towards neutral choices so that they don't conflict with the colors of any of the clothing
