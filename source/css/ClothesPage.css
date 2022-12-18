@@ -1,0 +1,12 @@
+.clothing{
+    width: 13vw;
+    height: 13vw;
+    background-color:white;
+    border-radius: 10px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+}
