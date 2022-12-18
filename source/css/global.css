@@ -7,13 +7,7 @@ body{
 }
 
 
-.solidDivider{
-    border-top: 3px solid rgb(53, 51, 67);
-}
 
-.title{
-    font-size: 25px;
-}
 
 /* Navigation Bar*/
 .topnav{
@@ -42,11 +36,35 @@ body{
 }
 
 
-/* Top Part of Clothes and Outifts Pages*/
+/* ---------- TOP PART OF CLOTHES AND OUTFITS PAGE ----------*/
+/* Sort and Filter*/
 .resultsView{
     float: right;
 }
 
+/* Title, Sort, and Filter*/
 .topBar{
     margin: 30px 10vw 5px;
+    width: 80vw;
+}
+
+/* Line */
+.solidDivider{
+    border-top: 3px solid rgb(53, 51, 67);
+}
+
+/* "Clothes" and "Fits" */
+.title{
+    font-size: 25px;
+}
+
+/* Gallery Part of Clothes and Outfits Pages*/
+.gallery{
+    height: 80vh; /*Remove once gallery is populated, should adjust according to content*/
+    width: 75vw;
+    padding: 2px;
+    display: flex;
+    gap: 2vw;
+    padding: 2vw;
+    justify-content: center;
 }

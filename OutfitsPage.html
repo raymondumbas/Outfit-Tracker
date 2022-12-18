@@ -13,12 +13,32 @@
         <a href="HomePage.html">FitCheck</a>
         <div class="navRight">
             <a href ="ClothesPage.html">Clothes</a>
-            <a href ="OutfitsPage.html">Outfits</a>
+            <a href ="OutfitsPage.html">Fits</a>
         </div>
     </div>
 </header>
 
 <body>
-    
+    <div class = "topBar">
+        <span class = "title"><b>Fits</b></span>
+            <div class = "resultsView">
+                <span>Sort by:</span>
+                <select name ="sort" id="sort">
+                    <option value="dateAdded" selected>Date Added</option>
+                    <option value="frequency">Frequency</option>
+                    <option value="dateWorn">Date Worn</option>
+                </select>
+                <span>Filter by:</span>
+                <select name ="filter" id="filter">
+                    <option value="none" selected>None</option>
+                    <option value="shirts">Shirts</option>
+                    <option value="outerwear">Outerwear</option>
+                    <option value="pants">Pants</option>
+                    <option value="shoes">Shoes</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+            </div>
+            <hr class = "solidDivider">
+        </div>    
 </body>
 </html>
