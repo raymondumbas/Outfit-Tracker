@@ -53,3 +53,9 @@ I based the style off of my own interests
 - When item is pressed:
   - use id value as key to look up clothing information
   - use that info to populate the pop up menu
+
+### Outfit View
+- first draft: multiple pics of each individual piece of clothing
+- second draft: one pic of entire outfit together
+- Looks more organized and is more helpful in picking an outfit
+- ![image](https://user-images.githubusercontent.com/114447806/209722495-90b18b85-17b8-4e4e-87ee-b0151337fbc3.png)
