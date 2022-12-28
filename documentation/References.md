@@ -20,5 +20,7 @@ Navigation Bar
 Pop-Up Menu
 - From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
 
+Storing and Using Images from localStorage
+- From https://stackoverflow.com/questions/19183180/how-to-save-an-image-to-localstorage-and-display-it-on-the-next-page
 
 

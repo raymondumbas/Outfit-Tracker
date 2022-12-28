@@ -9,25 +9,22 @@ small decisions, but any decisions that has a lot of factors will have it's own 
 ### Clothing
 - Each piece of clothing will be it's own item containing a JSON type structure containing:
   - Name
-  - Tags
   - Date
+  - Tags
   - Number of Fits
   - Frequency Worn
-- Each item will be accessed with a key: NameNumber
-  - Name = lowercase, no spaces
-  - Number = based on the current itemNumber value
+  - Last Worn
+- Each item will be accessed with a key based on its itemNumber
 
 ### Fits
 - Each fit will be it's own item containing a JSON type structure containing:
   - Name
-  - Tags
   - Date
-  - Frequency Worn
+  - Tags
   - List of item keys that are in the fit
-- Each fit will be accessed with a key: "fit"NameNumber
-  - "fit" = string literal
-  - Name = lowercase, no spaces
-  - Number = based on the current itemNumber value 
+  - Frequency Worn
+  - Last Worn
+- Each fit will be accessed with a key: itemNumber
 
 ### Variables
 - itemNumber
@@ -53,3 +50,15 @@ I based the style off of my own interests
 - When item is pressed:
   - use id value as key to look up clothing information
   - use that info to populate the pop up menu
+
+### Editing and Deleting
+- Some data in outfits and clothes can be edited by the user
+- Clothes
+  - Can be edited:
+    - Name
+    - Tags
+    - Frequency: just in case a user clicks that they wore it on accident
+  - Cannot be edited:
+    - Number of outfits: is calculated by creating/deleting outfits shouldnt be changed
+    - ID: would mess up dataflow if changed
+    - Date: should reflect when the user actually made it
