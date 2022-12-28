@@ -87,4 +87,10 @@ body{
     background-color: gray;
     margin: 10vh auto;
     border-radius: 25px;
+    font-size: 1vw;
+}
+
+.popupSubtitle{
+    text-decoration: underline;
+    margin-bottom: 1vw;
 }

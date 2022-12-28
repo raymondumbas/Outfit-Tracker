@@ -11,7 +11,7 @@ function exitToClothes(){
 
 function openPopUp(elem){
     popUp.style.display = "flex";
-    console.log("TEST");
+    console.log(elem.id);
 }
 
 function init(){

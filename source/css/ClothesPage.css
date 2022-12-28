@@ -34,13 +34,19 @@ body{
 /* Div w/ Pics, Tags, and Notes*/
 .picTagsNotes{
     display: flex;
-    padding: 25px;
+    padding: 3px 25px 0px;
     gap: 15px;
+
 }
 
 /*Div w/ Tags and Notes*/
 .tagsNotes{
+    display: flex;
+    flex-direction: column;
     position: relative;
+    background-color: red;
+    width: 100vw;
+
 }
 /* Exit Button*/
 .xButton{
@@ -63,13 +69,15 @@ body{
 
 /* Picture */
 .clothesPopPic{
-    width: 30vw;
-   
-    
+    width: 30vw; 
 }
 
 /* Notes */
 .notes{
     position:absolute;
     bottom: 0;
+    left: 0;
+    
+    height: 10vh;
+    width: 22vw;
 }
