@@ -62,3 +62,8 @@ I based the style off of my own interests
     - Number of outfits: is calculated by creating/deleting outfits shouldnt be changed
     - ID: would mess up dataflow if changed
     - Date: should reflect when the user actually made it
+### Outfit View
+- first draft: multiple pics of each individual piece of clothing
+- second draft: one pic of entire outfit together
+- Looks more organized and is more helpful in picking an outfit
+- ![image](https://user-images.githubusercontent.com/114447806/209722495-90b18b85-17b8-4e4e-87ee-b0151337fbc3.png)
