@@ -11,8 +11,13 @@ function exitToClothes(){
 
 function openPopUp(elem){
     popUp.style.display = "flex";
-    console.log(elem.id);
 }
 
 function init(){
 }
+
+window.onclick = function(event) {
+    if (event.target == popUp) {
+      popUp.style.display = "none";
+    }
+  }
