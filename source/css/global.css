@@ -82,6 +82,9 @@ body{
 }
 
 .popupData{
+    background-color: rgb(53, 51, 67);
+    display:flex;
+    flex-direction: column;
     height: 40vw;
     width: 60vw;
     background-color: gray;
@@ -93,4 +96,14 @@ body{
 .popupSubtitle{
     text-decoration: underline;
     margin-bottom: 1vw;
+    display: inline;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.popupValue{
+    margin: 0px;
+    font-size: 1.2vw;
+    margin-bottom: 0.5vw;
 }
