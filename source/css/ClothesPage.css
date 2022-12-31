@@ -34,8 +34,10 @@ body{
 /* Div w/ Pics, Tags, and Notes*/
 .picTagsNotes{
     display: flex;
-    padding: 3px 25px 0px;
     gap: 15px;
+    height: 78%;
+    width: 85%;
+    align-self: center;
 
 }
 
@@ -44,8 +46,7 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: red;
-    width: 100vw;
+    width: 60%
 
 }
 /* Exit Button*/
@@ -69,7 +70,10 @@ body{
 
 /* Picture */
 .clothesPopPic{
-    width: 30vw; 
+    width: 40%; 
+    height: 80%;
+    align-self: center;
+    border-radius: 10px;
 }
 
 /* Notes */
@@ -77,7 +81,11 @@ body{
     position:absolute;
     bottom: 0;
     left: 0;
-    
-    height: 10vh;
-    width: 22vw;
+    width: 98%;
+    height: 30%;
+    padding: 2px;
+    border-radius: 10px;
+    background-color:rgb(240,248,255, 0.8);
+
+
 }
