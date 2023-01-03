@@ -23,4 +23,14 @@ Pop-Up Menu
 Storing and Using Images from localStorage
 - From https://stackoverflow.com/questions/19183180/how-to-save-an-image-to-localstorage-and-display-it-on-the-next-page
 
+Adding a new child element
+- From https://www.w3schools.com/jsref/met_node_appendchild.asp
+```
+const node = document.createElement("li");
+const textnode = document.createTextNode("Water");
+node.appendChild(textnode);
+document.getElementById("myList").appendChild(node);
+
+```
+
 
