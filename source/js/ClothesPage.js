@@ -4,12 +4,14 @@ window.addEventListener('DOMContentLoaded', init);
 const xButton = document.querySelector(".xButton");
 //Popup
 const popUp = document.querySelector(".popup");
+const popUpName = document.querySelector("#popupName")
 const popUpDate = document.querySelector("#popupDate");
 const popUpNumFits = document.querySelector("#popupNumFits");
 const popUpFreq = document.querySelector("#popupFreq");
 const popUpLastWorn = document.querySelector("#popupLastWorn");
 const popUpTags = document.querySelector("#popupTags");
 const popUpNotes = document.querySelector("#popupNotes");
+const gallery = document.querySelector("#gallery");
 
 
 //----------Event Listeners----------
@@ -33,7 +35,48 @@ function incItemNumber(){
 function get(idNum){
   return JSON.parse(window.localStorage.getItem(idNum));
 }
+//Gallery View
+function populateGallery(){
+  let allItems = get("allItems");
+  console.log(allItems);
+  for(i = 0; i < allItems.length; i++){
+    let newTile = document.createElement("button");
+    let newID = allItems[i];
+    let currentItem = get(newID);
 
+    //Set up new button element
+    newTile.id = newID;
+    newTile.className = "clothing";
+    newTile.onclick = "openPopUp(this);"
+
+    //Create content for button
+    //TODO: Change image to base64 after other data works
+    let newImg = document.createElement("img");
+    newImg.src = "./images/12345.jpg";
+    newImg.alt = "Clothing Picture";
+    newImg.className = "clothingPic";
+    let newSpan = document.createElement("span");
+    newSpan.innerHTML = currentItem.name;
+
+    //Add content to button
+    newTile.appendChild(newImg);
+    newTile.appendChild(newSpan);
+
+    //Add button to page
+    gallery.appendChild(newTile);
+
+  }
+
+
+}
+
+/*
+        <button id = "12345" class = "clothing" onclick = "openPopUp(this);">
+            <img src = "tshirt.jpg" alt = "gray tshirt" class = "clothingPic">
+            <span>CLOTHING NAME</span>
+        </button >
+
+*/
 //Popup Menu
 function exitToClothes(){
     popUp.style.display = "none";
@@ -45,9 +88,9 @@ function openPopUp(elem){
     let current = get(id);
 
     //Set all corresponding popup values
-    [popUpDate.innerHTML,popUpNumFits.innerHTML,popUpFreq.innerHTML,
+    [popUpName.innerHTML,popUpDate.innerHTML,popUpNumFits.innerHTML,popUpFreq.innerHTML,
     popUpLastWorn.innerHTML,popUpTags.innerHTML,popUpNotes.innerHTML] 
-    = [current.date,current.numFits,current.freq,current.lastWorn,current.tags,current.notes]
+    = [current.name,current.date,current.numFits,current.freq,current.lastWorn,current.tags,current.notes]
 
 
     //Data loaded, show popup
@@ -66,6 +109,7 @@ window.onclick = function(event) {
 
 // --------------Testing Area-------------------
 let clothing = new Object();
+clothing.name = "Grey Shirt"
 clothing.date = "12/19/22";
 clothing.numFits = "5";
 clothing.freq="5";
@@ -74,5 +118,8 @@ clothing.tags = "Shirt,Gray"
 clothing.notes = "testing testing testing"
 
 function init(){
+  let allItems = ["12345","abcdef"];
+  window.localStorage.setItem("allItems", JSON.stringify(allItems));
   window.localStorage.setItem("12345", JSON.stringify(clothing));
+  populateGallery();
 }

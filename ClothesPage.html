@@ -45,34 +45,17 @@
     </div> 
 
     <!-- View of all the Clothes items-->
-    <div class = "gallery">
-        <button id = "12345" class = "clothing" onclick = "openPopUp(this);">
-            <img src = "tshirt.jpg" alt = "gray tshirt" class = "clothingPic">
-            <span>CLOTHING NAME</span>
-        </button >
-        <button  class = "clothing">
-            CLOTHING NAME
-        </button >
-        <button  class = "clothing">
-            CLOTHING NAME
-        </button >
-        <button  class = "clothing">
-            CLOTHING NAME
-        </button >
-        <button  class = "clothing">
-            CLOTHING NAME
-        </button >
-    </div>
+    <div id = "gallery" class = "gallery"></div>
 
     <!-- Pop Up Menu for Clothes Info -->
     <div class = "popup">
         <div class = "popupData">
             <div class = "nameX">
-                <span class = "title">Name</span>
+                <span class = "title" id = "popupName">Name</span>
                 <button type = "button" class = "xButton">X</button>
             </div>
             <div class = "picTagsNotes">
-                <img src = "tshirt.jpg" alt = "gray tshirt" class = "clothesPopPic">
+                <img src = "./images/12345.jpg" alt = "gray tshirt" class = "clothesPopPic">
                 <div class = "tagsNotes">
                     <span class = "popupSubtitle">Date:</span><span id = "popupDate" class = "popupValue">12/19/22</span>
                     <span class = "popupSubtitle" >Number of Fits:</span><span id = "popupNumFits" class = "popupValue">5</span>
