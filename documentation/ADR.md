@@ -14,6 +14,7 @@ small decisions, but any decisions that has a lot of factors will have it's own 
   - Number of Fits
   - Frequency Worn
   - Last Worn
+  - Image
 - Each item will be accessed with a key based on its itemNumber
 
 ### Fits
