@@ -32,5 +32,20 @@ node.appendChild(textnode);
 document.getElementById("myList").appendChild(node);
 
 ```
+Adding an event listener for all pieces in gallery view
+
+- From https://stackoverflow.com/questions/49680484/how-to-add-one-event-listener-for-all-buttons
+```
+const wrapper = document.getElementById('wrapper');
+
+wrapper.addEventListener('click', (event) => {
+  const isButton = event.target.nodeName === 'BUTTON';
+  if (!isButton) {
+    return;
+  }
+
+  console.dir(event.target.id);
+})
+```
 
 
