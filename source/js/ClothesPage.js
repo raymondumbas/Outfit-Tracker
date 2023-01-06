@@ -16,6 +16,7 @@ const gallery = document.querySelector("#gallery");
 
 //----------Event Listeners----------
 xButton.addEventListener("click", exitToClothes);
+gallery.addEventListener("click", (event)=>{openPopUp((event.target))})
 
 //----------Functions----------
 
@@ -47,19 +48,16 @@ function populateGallery(){
     //Set up new button element
     newTile.id = newID;
     newTile.className = "clothing";
-    newTile.onclick = "openPopUp(this);"
-
-    //Create content for button
+    newTile.onclick = "openPopUp(this)";
     //TODO: Change image to base64 after other data works
-    let newImg = document.createElement("img");
-    newImg.src = "./images/12345.jpg";
-    newImg.alt = "Clothing Picture";
-    newImg.className = "clothingPic";
+    newTile.style.backgroundImage = "url('../images/12345.jpg')"
+  
+    //Create content for button
+    
     let newSpan = document.createElement("span");
     newSpan.innerHTML = currentItem.name;
-
+    newSpan.className = "clothingName";
     //Add content to button
-    newTile.appendChild(newImg);
     newTile.appendChild(newSpan);
 
     //Add button to page
@@ -70,19 +68,18 @@ function populateGallery(){
 
 }
 
-/*
-        <button id = "12345" class = "clothing" onclick = "openPopUp(this);">
-            <img src = "tshirt.jpg" alt = "gray tshirt" class = "clothingPic">
-            <span>CLOTHING NAME</span>
-        </button >
-
-*/
 //Popup Menu
 function exitToClothes(){
     popUp.style.display = "none";
 }
 
 function openPopUp(elem){
+    console.log(elem);
+    const isClothing = elem.nodeName === 'BUTTON';
+    if (!isClothing) {
+      return;
+    }
+  
     //Retrieve corresponding element from localStorage
     let id = elem.id;
     let current = get(id);
@@ -121,5 +118,6 @@ function init(){
   let allItems = ["12345","abcdef"];
   window.localStorage.setItem("allItems", JSON.stringify(allItems));
   window.localStorage.setItem("12345", JSON.stringify(clothing));
+  
   populateGallery();
 }
