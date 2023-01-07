@@ -68,3 +68,10 @@ I based the style off of my own interests
 - second draft: one pic of entire outfit together
 - Looks more organized and is more helpful in picking an outfit
 - ![image](https://user-images.githubusercontent.com/114447806/209722495-90b18b85-17b8-4e4e-87ee-b0151337fbc3.png)
+
+### Home Page
+- Made new clothing boxes bigger
+- I realized more space was needed for all of the necessary item information
+- Also not much room is needed for a "Welcome" box
+- ![image](https://user-images.githubusercontent.com/114447806/211123955-294a351c-e32e-4dbf-b6b4-220e1d692b80.png)
+
