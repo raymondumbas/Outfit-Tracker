@@ -2,47 +2,125 @@
 #main{
     display:flex;
 }
-#itemBoxes{
-    display:flex;
-}
-#newBoxes{
-    display:flex;
-}
 
+#homeLeft{
+    display: flex;
+    gap: 10px;
+}
 
 /* --- All Home Page Boxes*/
 .homeDiv{
-    background-color: rgb(53, 51, 67);
+    width: 30vw;
+    height: 80vh;
     padding: 20px;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
+
+.tagCheckboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+  }
 /*--- Welcome Box ---*/
 #welcomeBox{
-    height: 80vh;
-    width: 33vw;
-    margin: 10px;
+    background-color: rgb(53, 51, 67);
     border-radius:25px;
-}
-
-/*--- New Boxes --- */ 
-#newClothes{
-    border-radius: 25px;
-    height: 36vh;
-    width: 30vw;
-    margin: 10px;
-} 
-
-#newOutfit{
-    border-radius: 25px;
-    height: 36vh;
-    width: 30vw;
-    margin: 10px;
-
+    height:33%;
+    margin-top: -10px;
+    padding: 20px;
 }
 
 /*--- Popular Box ---*/
 #popular{
+    background-color: rgb(53, 51, 67);
+    padding: 20px;
     border-radius: 25px;
-    height: 37vh;
+    height:100%;
+    margin-bottom: -30px;
 }
+
+#popularData{
+    background-color: aliceblue;
+    height: 95%;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+/*--- New Clothes Box --- */ 
+#newClothes{
+    background-color: rgb(53, 51, 67);
+    border-radius: 25px;
+    margin: 10px;
+} 
+
+#newClothesPrompt{
+    display: flex;
+
+}
+
+#topNCP{
+    height:50%;
+    border-radius: 25px;
+    display:flex;
+
+}
+
+#topNCP input{
+    margin-bottom: 20%;
+    align-self: center;
+}
+
+#botNCP{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    align-items: flex-start;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#clothesCheckboxes {
+    display: flex;
+    gap: 3vw;
+    align-self: center;
+    margin-bottom: 5%;
+  }
+
+#clothingImg{
+    height: 95%;
+    width: 95%;
+    background-color: rgb(53, 51, 67);
+    border-radius: 25px;
+    margin: 5px;
+}
+
+
+#nameDateImage{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px;
+}
+
+#notesNCP{
+    align-self: center;
+    width: 80%;
+    height:35%;
+    margin: 5px auto;
+}
+
+
+
+
+/*--- New Outfit Box --- */ 
+#newOutfit{
+    background-color: rgb(53, 51, 67);
+    border-radius: 25px;
+    margin: 10px;
+
+}
+

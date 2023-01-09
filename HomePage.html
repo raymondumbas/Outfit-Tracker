@@ -22,29 +22,102 @@
 <body>
     <div id = "main">
         <!-- Welcome Box -->
-        <div id = "welcomeBox" class = "homeDiv">
-        WELCOME
-        </div>
-
-        <!--Right Section of Home Page-->
-        <div id = "itemsBoxes">
-            
-            <!-- Creating new clothes and outfits-->
-            <div id = "newBoxes">
-                <div id = "newClothes" class = "homeDiv">
-                    NEW CLOTHES
-                </div>
-                <div id = "newOutfit" class = "homeDiv">
-                    NEW OUTFITS
-                </div>
+        <div id = "homeLeft"  class = "homeDiv">
+            <div id = "welcomeBox">
+                WELCOME
             </div>
-
-            <!-- Most popular clothes and outfits-->
-            <div id = "popular" class = "homeDiv">
+            <div id = "popular">
                 POPULAR
+                <div id = "popularData"></div>
             </div>
         </div>
-
+        <div id = "newClothes" class = "homeDiv">
+            Create A New Clothing Item
+            <form id = "newClothesPrompt" class = "prompt" onsubmit="return false">
+                <!-- top half-->
+                <div id = "topNCP">
+                    <!-- Name, Date, Image Input-->
+                    <div id = "nameDateImage">
+                        <label for = "name"> Name</label>
+                        <input id = "nameNCP" type = "text"  name = "name">
+                        <label for = "date"> Date</label>
+                        <input id = "dateNCP" type = "date" name = "date">
+                        <label for = "image"> Image</label>
+                        <input id = "imageNCP" type = "file" name = "image">
+                    </div>
+                    <img id = "clothingImg">
+                </div>
+                <!-- bottom half-->
+                <div id = "botNCP"> 
+                    Tags
+                    <div id = "clothesCheckboxes">
+                        <div class = "tagCheckboxes">
+                            <span>
+                                <label for="type1">Top</label>
+                                <input type="checkbox" id="type1" name="type1" value="Top">
+                            </span>
+                            <span>
+                                <label for="type2">Bottom</label>
+                                <input type="checkbox" id="type2" name="type2" value="Bottom">
+                            </span>
+                            <span>
+                                <label for="type3">Shoes</label>
+                                <input type="checkbox" id="type3" name="type3" value="Shoes">
+                            </span>
+                            <span>
+                                <label for="type4">Other</label>       
+                                <input type="checkbox" id="type4" name="type4" value="Other">
+                            </span>
+                        </div>   
+                        <div class = "tagCheckboxes">
+                            <span>
+                                <label for="style1">Oversized</label>
+                                <input type="checkbox" id="style1" name="style1" value="Oversized">
+                            </span>
+                            <span>
+                                <label for="style2">Streetwear</label>
+                                <input type="checkbox" id="style2" name="style2" value="Streetwear">
+                            </span>
+                            <span>
+                                <label for="style3">Aesthetic</label>
+                                <input type="checkbox" id="style3" name="style3" value="Aesthetic">
+                            </span>
+                            <span>
+                                <label for="style4">Thrifted</label>       
+                                <input type="checkbox" id="style4" name="style4" value="Thrifted">
+                            </span> 
+                        </div>
+                        <div class = "tagCheckboxes">
+                            <span>
+                                <label for="color1">Monochrome</label>
+                                <input type="checkbox" id="type1" name="type1" value="Monochrome">
+                            </span>
+                            <span>
+                                <label for="color2">Earth Tones</label>
+                                <input type="checkbox" id="color2" name="color2" value="Earth Tones">
+                            </span>
+                            <span>
+                                <label for="color3">Cool</label>
+                                <input type="checkbox" id="color3" name="color3" value="Cool">
+                            </span>
+                            <span>
+                                <label for="color4">Neutral</label>       
+                                <input type="checkbox" id="color4" name="color4" value="Neutral">
+                            </span>
+                        </div>
+                    </div>
+                    Notes
+                    <textarea id = "notesNCP"></textarea>
+                    <button id = "saveNCP" class = "button">Save</button>
+                </div>
+            </form>
+        </div>
+        <div id = "newOutfit" class = "homeDiv">
+            Create A New Outfit
+            <div id = "newOutfitPrompt" class = "prompt"></div>
+        </div>
     </div>
+
+    <script  src="./source/js/HomePage.js" type = "text/javascript"></script>
 </body>
 </html>
