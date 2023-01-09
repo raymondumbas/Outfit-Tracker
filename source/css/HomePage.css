@@ -8,6 +8,7 @@
     gap: 10px;
 }
 
+
 /* --- All Home Page Boxes*/
 .homeDiv{
     width: 30vw;
@@ -63,6 +64,7 @@
 }
 
 #topNCP{
+    width: 99%;
     height:50%;
     border-radius: 25px;
     display:flex;
@@ -91,11 +93,13 @@
   }
 
 #clothingImg{
-    height: 95%;
-    width: 95%;
-    background-color: rgb(53, 51, 67);
+    height: 260px;
+    width: 160px;
     border-radius: 25px;
-    margin: 5px;
+    background-color: rgb(53, 51, 67);
+    margin: 10px;
+    object-fit: fill;
+    
 }
 
 
