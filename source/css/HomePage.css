@@ -98,7 +98,7 @@
     border-radius: 25px;
     background-color: rgb(53, 51, 67);
     margin: 10px;
-    object-fit: fill;
+    object-fit: contain;
     
 }
 
