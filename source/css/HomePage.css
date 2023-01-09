@@ -94,10 +94,11 @@
 
 #clothingImg{
     height: 260px;
-    width: 160px;
+    width: 180px;
     border-radius: 25px;
     background-color: rgb(53, 51, 67);
-    margin: 10px;
+    margin-top: 20px;
+    margin-right: 30px;
     object-fit: contain;
     
 }
