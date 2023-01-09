@@ -17,6 +17,22 @@ small decisions, but any decisions that has a lot of factors will have it's own 
   - Image
 - Each item will be accessed with a key based on its itemNumber
 
+- Tags:
+  - Type
+    - Top
+    - Bottom
+    - Shoes
+    - Accessories
+  - Style:
+    - Oversized
+    - Streetwear
+    - Aesthetic
+    - Thrifted
+  - Color:
+    - Monochrome
+    - Earth
+    - Cool
+    - Neutral
 ### Fits
 - Each fit will be it's own item containing a JSON type structure containing:
   - Name
